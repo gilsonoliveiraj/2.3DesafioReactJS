@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface ContainerProps {
   size?: 'small' | 'large';
+  path?: string;
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -16,6 +17,9 @@ export const Container = styled.div<ContainerProps>`
     align-items: center;
     justify-content: space-between;
 
+    .currentPage {
+      border-bottom: 2px solid #ff872c;
+    }
     nav {
       a {
         color: #fff;
